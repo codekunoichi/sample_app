@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.1'
 
+# An XML toolkit for Ruby
+gem 'rexml', '~> 3.2', '>= 3.2.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.1'
 # Use Puma as the app server
@@ -42,7 +44,7 @@ group :development, :test do
   # Combine 'pry' with 'byebug'. Adds 'step', 'next', 'finish', 'continue' and 'break' commands to control execution.
   gem 'pry-byebug'
   # Pry Doc is a Pry REPL plugin. It provides extended documentation support for the REPL by means of improving the `show-doc` and `show-source` commands.
-  gem 'pry-doc'
+  #gem 'pry-doc'
   # Allows you to wrap code in Pry::rescue{ } to open a pry session at any unhandled exceptions
   gem 'pry-rescue'
 
