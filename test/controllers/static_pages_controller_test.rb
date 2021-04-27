@@ -31,4 +31,9 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "Contact | #{@base_title}"
   end
 
+  test "should get sitemap" do 
+    get static_pages_sitemap_url
+    assert_response :success
+    assert_select "title", "SiteMap | #{@base_title}"
+  end
 end
