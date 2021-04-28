@@ -13,4 +13,7 @@ class StaticPagesController < ApplicationController
 
   def sitemap 
   end
+
+  def pressreleases
+  end
 end

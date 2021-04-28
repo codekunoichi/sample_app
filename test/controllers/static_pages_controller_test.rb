@@ -36,4 +36,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
     assert_select "title", "SiteMap | #{@base_title}"
   end
+
+  test "should get press releases" do 
+    get static_pages_pressreleases_url
+    assert_response :success 
+    assert_select "title", "Press Releases | #{@base_title}"
+  end 
 end
