@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.0.1'
-
+# bootstrap-sass is a Sass-powered version of Bootstrap 3, ready to drop right into your Sass powered applications.
+gem 'bootstrap-sass',   '3.4.1'
 # An XML toolkit for Ruby
 gem 'rexml', '~> 3.2', '>= 3.2.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
